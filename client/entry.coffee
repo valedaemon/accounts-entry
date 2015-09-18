@@ -7,6 +7,7 @@ AccountsEntry =
     emailToLower: true
     usernameToLower: false
     entrySignUp: '/sign-up'
+    showPasswordReset: true
     extraSignUpFields: []
     showOtherLoginServices: true
     fluidLayout: false

@@ -24,6 +24,9 @@ AccountsEntry.entrySignInHelpers = {
   isUsernameOnly: ->
     return AccountsEntry.settings.passwordSignupFields == 'USERNAME_ONLY'
 
+  showPasswordReset: ->
+    return AccountsEntry.settings.showPasswordReset
+
 }
 
 AccountsEntry.entrySignInEvents = {

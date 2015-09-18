@@ -34,7 +34,9 @@
               <input name="password" type="password" class="form-control" value='{{password}}' placeholder="{{t9n 'password'}}">
             </div>
             {{#unless isUsernameOnly}}
-              <p><a href="{{pathFor 'entryForgotPassword'}}">{{t9n "forgotPassword"}}</a></p>
+              {{#if showPasswordReset}}
+                <p><a href="{{pathFor 'entryForgotPassword'}}">{{t9n "forgotPassword"}}</a></p>
+              {{/if}}
               <button type="submit" class="submit btn btn-block btn-default">{{t9n "signIn"}}</button>
             {{/unless}}
           </form>
