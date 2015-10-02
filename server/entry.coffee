@@ -34,3 +34,5 @@ Meteor.startup ->
           profile: _.extend(profile, user.profile)
       if (user.email && Accounts._options.sendVerificationEmail)
         Accounts.sendVerificationEmail(userId, user.email)
+
+      return user
